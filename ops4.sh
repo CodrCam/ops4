@@ -1,4 +1,4 @@
- #!/bin/bash
+  #!/bin/bash
 
 #Script: Ops 201 Class 04 Ops Challenge Solution
 #Author: Cameron Griffin
@@ -15,15 +15,15 @@ mkdir dir1
 mkdir dir2
 mkdir dir3
 mkdir dir4
-
 #Load each directory path into an array.
-dir_arrray=(dir1 dir2 dir3 dir4)
-
+dir_arrray=( dir1 dir2 dir3 dir4 )
 #create a new .txt file within each directory by referencing the directory with array indices, not the literal directory path.
-touch ./${dir_array[0]}/file1.txt
-touch ./${dir_array[1]}/file2.txt
-touch ./${dir_array[2]}/file3.txt
-touch ./${dir_array[3]}/file4.txt
+
+
+touch ${dir_array[0]}/file1.txt
+touch ${dir_array[1]}/file2.txt
+touch ${dir_array[2]}/file3.txt
+touch ${dir_array[3]}/file4.txt
 
 
 #Test & validate.
@@ -32,6 +32,7 @@ touch ./${dir_array[3]}/file4.txt
 
 arrayDir () {
         echo ${dir_arrray[@]}
+
 }
 
 arrayDir
